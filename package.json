@@ -10,11 +10,17 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.2.2",
-    "@strapi/plugin-users-permissions": "4.2.2",
-    "@strapi/strapi": "4.2.2",
-    "pg": "8.6.0",
+    "@strapi/plugin-i18n": "4.25.20",
+    "@strapi/plugin-users-permissions": "4.25.20",
+    "@strapi/strapi": "4.25.20",
+    "@strapi/upgrade": "^5.8.1",
+    "minor": "^1.2.3",
+    "pg": "^8.7.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.3.4",
     "strapi": "^3.6.11",
+    "styled-components": "^5.3.11",
     "yarn": "^1.22.22"
   },
   "author": {
