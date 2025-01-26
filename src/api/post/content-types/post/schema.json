@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true
+    },
+    "konten": {
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "judul",
+      "required": true
+    },
+    "kategoris": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::kategori.kategori"
+    },
+    "gambar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "kutipan": {
+      "type": "richtext",
+      "required": true
+    },
+    "penulis": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::penulis.penulis"
+    },
+    "jenis": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::jenis.jenis"
+    },
+    "koleksi_gambar": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    }
+  }
+}

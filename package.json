@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Backend website disperkim jabar",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.2.2",
+    "@strapi/plugin-users-permissions": "4.2.2",
+    "@strapi/strapi": "4.2.2",
+    "pg": "8.6.0",
+    "strapi": "^3.6.11",
+    "yarn": "^1.22.22"
+  },
+  "author": {
+    "name": "doovj"
+  },
+  "strapi": {
+    "uuid": "66ebd0b0-d11d-4089-a763-384ceeb13d71"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

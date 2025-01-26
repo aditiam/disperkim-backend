@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "masukans",
+  "info": {
+    "singularName": "masukan",
+    "pluralName": "masukans",
+    "displayName": "Permohonan Informasi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "hp": {
+      "type": "string",
+      "required": true
+    },
+    "alamat": {
+      "type": "string",
+      "required": true
+    },
+    "tujuan": {
+      "type": "string",
+      "required": true
+    },
+    "informasi": {
+      "type": "richtext",
+      "required": true
+    },
+    "selesai": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

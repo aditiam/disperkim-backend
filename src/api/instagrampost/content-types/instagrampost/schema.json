@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instagramposts",
+  "info": {
+    "singularName": "instagrampost",
+    "pluralName": "instagramposts",
+    "displayName": "Instagram Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "judul",
+      "required": true
+    }
+  }
+}

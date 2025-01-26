@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dokumens",
+  "info": {
+    "singularName": "dokumen",
+    "pluralName": "dokumens",
+    "displayName": "Dokumen",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "string",
+      "required": false
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "judul",
+      "required": true
+    },
+    "tanggal": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

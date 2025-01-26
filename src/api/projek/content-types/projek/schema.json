@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projeks",
+  "info": {
+    "singularName": "projek",
+    "pluralName": "projeks",
+    "displayName": "Projek",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "richtext",
+      "required": false
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "judul",
+      "required": true
+    },
+    "foto": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "kategori_projeks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::kategori-projek.kategori-projek"
+    }
+  }
+}

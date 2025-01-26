@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dokumen_ksjs",
+  "info": {
+    "singularName": "dokumen-ksj",
+    "pluralName": "dokumen-ksjs",
+    "displayName": "Dokumen KSJ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "asal": {
+      "type": "string",
+      "required": true
+    },
+    "sektor": {
+      "type": "string",
+      "required": true
+    },
+    "kategori": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

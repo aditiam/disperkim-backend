@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "penulises",
+  "info": {
+    "singularName": "penulis",
+    "pluralName": "penulises",
+    "displayName": "Penulis",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nama",
+      "required": true
+    }
+  }
+}

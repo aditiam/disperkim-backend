@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jenises",
+  "info": {
+    "singularName": "jenis",
+    "pluralName": "jenises",
+    "displayName": "Jenis"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nama",
+      "required": true
+    }
+  }
+}

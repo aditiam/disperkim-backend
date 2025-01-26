@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "komentars",
+  "info": {
+    "singularName": "komentar",
+    "pluralName": "komentars",
+    "displayName": "Komentar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "isi": {
+      "type": "richtext",
+      "required": true
+    },
+    "program": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::program.program"
+    },
+    "balasan": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aduans",
+  "info": {
+    "singularName": "aduan",
+    "pluralName": "aduans",
+    "displayName": "Aduan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "hp": {
+      "type": "string",
+      "required": true
+    },
+    "alamat": {
+      "type": "string",
+      "required": true
+    },
+    "perihal": {
+      "type": "string",
+      "required": true
+    },
+    "aduan": {
+      "type": "richtext",
+      "required": true
+    },
+    "selesai": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
